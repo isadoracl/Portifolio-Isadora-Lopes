@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #d2c7ff;
+  }
+
+
+  .menu {
+    background-color: #f6c6fa; /* lilás clarinho */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0 30px;
+    flex-wrap: wrap;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #d2c7ff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  body {
+    padding-top: 50px; /* pra evitar que o topo fique escondido atrás do menu fixo */
+  }
+
+  body {
+    padding-top: 70px;
+  }
+  
+  
+  .Imagem-Principal img {
+    width: 98%;
+    height: 650px;
+    display: block;
+    margin: 0 auto;
+    border-left: 4px solid #d2c7ff;   /* Borda esquerda */
+    border-right: 4px solid #d2c7ff;  /* Borda direita */
+    box-shadow: 
+      -10px 0 20px rgba(250, 250, 250, 0.616), /* brilho à esquerda */
+       10px 0 20px rgba(250, 250, 250, 0.616); /* brilho à direita */
+    border-radius: 0;
+    max-width: none;
+  }
