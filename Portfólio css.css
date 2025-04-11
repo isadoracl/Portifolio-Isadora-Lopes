@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
     background: #d2c7ff;
   }
 
@@ -65,3 +66,16 @@ body {
     border-radius: 0;
     max-width: none;
   }
+
+  section {
+    scroll-margin-top: 80px;
+  }
+
+  section {
+    padding: 20px 5px; /* 40px em cima e embaixo, 30px nas laterais */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
