@@ -1,0 +1,251 @@
+/* === ESTILOS GERAIS === */
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #d2c7ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === MENU DE NAVEGAÇÃO === */
+.menu {
+  background-color: #f6c6fa;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  color: #d2c7ff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* === IMAGEM PRINCIPAL === */
+.Imagem-Principal img {
+  width: 98%;
+  height: 650px;
+  display: block;
+  margin: 0 auto;
+  border-left: 4px solid #d2c7ff;
+  border-right: 4px solid #d2c7ff;
+  border-radius: 0;
+  max-width: none;
+  box-shadow: 
+    -10px 0 20px rgba(250, 250, 250, 0.616),
+     10px 0 20px rgba(250, 250, 250, 0.616);  
+}
+
+
+/* === CONFIGURAÇÃO PARTE: SOBRE MIM === */
+.Ajustes-sobre {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 80px;
+  flex-wrap: wrap;
+}
+
+.Imagem-Secundaria img {
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.Texto-Sobre {
+  flex: 1;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: 100%; 
+}
+
+
+/* === CONFIGURAÇÃO PARTE: VÍDEO === */
+.Video {
+  display: flex;
+  justify-content: center;
+}
+
+.Video-estilo {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === SEÇÕES DA PÁGINA === */
+section {
+  padding: 20px 5px;
+  scroll-margin-top: 40px;
+}
+
+/* === CONFIGURAÇÃO PARTE: CONTATO === */
+.mapa-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mapa-iframe {
+  width: 80%;
+  height: 320px;
+  border: 0;
+  border-radius: 15px;
+}
+
+.icones-contato {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  margin-top: 20px;
+}
+
+.icones-contato img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icones-contato img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* === MELHORIAS VISUAIS DAS SEÇÕES === */
+section {
+  padding: 4px 10px;
+  margin: 20px auto;
+  max-width: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Títulos das seções com linha */
+section h2 {
+  font-size: 28px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Texto interno */
+section p, section li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fdfdfd;
+}
+
+
+/* Apliando imagem */
+.miniatura {
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.miniatura:hover {
+  transform: scale(1.05);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Botão de fechar imagem */
+.popup .fechar {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.popup:target {
+  display: block;
+}
+
+
+/* Ajustes JS*/
+button {
+    background-color: #f6c6fa;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d2c7ff;
+}
+
+input, textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
